@@ -1,4 +1,4 @@
-package com.icarus.test;
+package com.icarus.acceptancetest;
 
 import com.icarus.OnlineTicketingSystem;
 import com.icarus.TicketService;
@@ -18,25 +18,27 @@ public class ExampleClient {
         TicketService ticketingSystem = new OnlineTicketingSystem();
         String userAuthToken = "tom@example.com";
 
-        List<Offer> searchResults = ticketingSystem.searchForTickets("London", "New York");
+        List<Offer> searchResults = ticketingSystem.searchForTickets("", "");
 
         if (searchResults.isEmpty()) {
             System.out.println("No search results found");
         } else {
             Offer offer = searchResults.get(0);
 
+            for (Offer o: searchResults){
+                Debug.println("Result", o.toString());
+            }
+
             // some time may pass...
             Thread.sleep(2 * 1000);
 
             if (priceAcceptable(offer.price)) {
-                ticketingSystem.confirmBooking(offer.id, userAuthToken);
                 ticketingSystem.confirmBooking(offer.id, userAuthToken);
             }
         }
     }
 
     private static boolean priceAcceptable(BigDecimal price) {
-        Debug.println("DEBUG: price", price.toString());
         return true;
     }
 }

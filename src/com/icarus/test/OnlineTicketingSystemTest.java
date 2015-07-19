@@ -1,5 +1,6 @@
-package com.icarus;
+package com.icarus.test;
 
+import com.icarus.OnlineTicketingSystem;
 import com.icarus.flights.Offer;
 import org.junit.Before;
 import org.junit.Test;

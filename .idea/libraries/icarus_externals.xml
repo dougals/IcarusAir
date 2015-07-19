@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="icarus-externals">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/icarus-externals.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

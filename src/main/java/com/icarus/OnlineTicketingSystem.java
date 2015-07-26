@@ -15,6 +15,7 @@ public class OnlineTicketingSystem implements TicketService {
 
     public static final BigDecimal STANDARD_PROCESSING_CHARGE = new BigDecimal(10);
 
+
     protected Map<UUID, Quote> _quotes;
     protected List<Offer> _searchResults;
 
@@ -47,12 +48,44 @@ public class OnlineTicketingSystem implements TicketService {
         Quote quote = _quotes.get(id);
 
         long timeNow = System.currentTimeMillis();
-
         validateExpiration(quote.timestamp, timeNow, MAX_QUOTE_AGE_MILLIS);
+        long quoteAge = timeNow - quote.timestamp;
 
-        Booking completeBooking = new Booking(quote.offer.price.add(STANDARD_PROCESSING_CHARGE), quote, timeNow, userAuthToken);
+        BigDecimal totalPrice = getPriceWithProcessingFee(quote.offer.price, quoteAge);
 
+        Booking completeBooking = createBooking(userAuthToken, quote, timeNow, totalPrice);
         processBooking(completeBooking);
+    }
+
+    private Booking createBooking(String userAuthToken, Quote quote, long timeNow, BigDecimal processingFee) {
+        return new Booking(processingFee, quote, timeNow, userAuthToken);
+    }
+
+    protected BigDecimal getPriceWithProcessingFee(BigDecimal quotePrice, long ageMillis) {
+
+        long quoteAgeMinutes = ageMillis / 1000 / 60;
+        BigDecimal processingCharge;
+
+        if (quoteAgeMinutes <= 2) {
+            processingCharge = new BigDecimal(0);
+        }
+        else if (quoteAgeMinutes <= 10) {
+            processingCharge = getLesserOf5PercentOr10Pounds(quotePrice);
+        }
+        else if (quoteAgeMinutes <= 20){
+            processingCharge = new BigDecimal(20);
+        } else {
+            throw new IllegalStateException("Unexpected quote age: " + quoteAgeMinutes);
+        }
+
+        return quotePrice.add(processingCharge);
+    }
+
+    private BigDecimal getLesserOf5PercentOr10Pounds(BigDecimal quotePrice) {
+        BigDecimal fivePercentOfPrice = quotePrice.multiply(new BigDecimal(0.05));
+        BigDecimal tenPounds = new BigDecimal(10);
+
+        return (fivePercentOfPrice.compareTo(tenPounds) == -1) ? fivePercentOfPrice : tenPounds;
     }
 
     protected void processBooking(Booking completeBooking) {

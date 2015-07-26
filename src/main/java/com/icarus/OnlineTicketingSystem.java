@@ -66,6 +66,13 @@ public class OnlineTicketingSystem implements TicketService {
         long quoteAgeMinutes = ageMillis / 1000 / 60;
         BigDecimal processingCharge;
 
+        processingCharge = getProcessingFee(quotePrice, quoteAgeMinutes);
+
+        return quotePrice.add(processingCharge);
+    }
+
+    private BigDecimal getProcessingFee(BigDecimal quotePrice, long quoteAgeMinutes) {
+        BigDecimal processingCharge;
         if (quoteAgeMinutes <= 2) {
             processingCharge = new BigDecimal(0);
         }
@@ -77,8 +84,7 @@ public class OnlineTicketingSystem implements TicketService {
         } else {
             throw new IllegalStateException("Unexpected quote age: " + quoteAgeMinutes);
         }
-
-        return quotePrice.add(processingCharge);
+        return processingCharge;
     }
 
     private BigDecimal getLesserOf5PercentOr10Pounds(BigDecimal quotePrice) {

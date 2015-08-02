@@ -20,6 +20,7 @@ public class VerifyExistingBehaviour {
     TicketService ticketingSystem;
     String userAuthToken;
     List<Offer> searchResults;
+    List<Offer> emptySearchResults;
     Offer offer;
 
     @Before
@@ -27,12 +28,19 @@ public class VerifyExistingBehaviour {
         ticketingSystem = new OnlineTicketingSystem();
         userAuthToken = "tom@example.com";
         searchResults = ticketingSystem.searchForTickets("London", "New York");
+        emptySearchResults = ticketingSystem.searchForTickets("London", "Minneapolis");
     }
 
     @Test
-    public void testThatSearchingForACertainFlightReturnsOffers() {
+    public void testThatSearchingForAValidFlightReturnsOffers() {
         assertNotNull(searchResults);
         assertTrue(searchResults.size() > 0);
+    }
+
+    @Test
+    public void testThatSearchingForABadRouteReturnsNoOffers() {
+        assertNotNull(emptySearchResults);
+        assertTrue(emptySearchResults.size() == 0);
     }
 
     @Test

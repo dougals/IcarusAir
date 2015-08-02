@@ -71,7 +71,7 @@ public class OnlineTicketingSystem implements TicketService {
         return quotePrice.add(processingCharge);
     }
 
-    private BigDecimal getProcessingFee(BigDecimal quotePrice, long quoteAgeMinutes) {
+    protected BigDecimal getProcessingFee(BigDecimal quotePrice, long quoteAgeMinutes) {
         BigDecimal processingCharge;
         if (quoteAgeMinutes <= 2) {
             processingCharge = new BigDecimal(0);
@@ -87,7 +87,7 @@ public class OnlineTicketingSystem implements TicketService {
         return processingCharge;
     }
 
-    private BigDecimal getLesserOf5PercentOr10Pounds(BigDecimal quotePrice) {
+    protected BigDecimal getLesserOf5PercentOr10Pounds(BigDecimal quotePrice) {
         BigDecimal fivePercentOfPrice = quotePrice.multiply(new BigDecimal(0.05));
         BigDecimal tenPounds = new BigDecimal(10);
 

@@ -133,6 +133,41 @@ public class TicketingSystemTest {
         assertEquals(expectedCharge, processingCharge);
     }
 
+    @Test
+    public void whenQuoteIsLessThan2MinutesOldProcessingFeeIs0(){
+        BigDecimal quotePrice = new BigDecimal(1000);
+        long quoteAgeMinutes = 2;
+
+        BigDecimal processingCharge = testableTicketingSystem.getProcessingFee(quotePrice, quoteAgeMinutes);
+
+        BigDecimal expectedCharge = new BigDecimal(0);
+
+        assertEquals(expectedCharge, processingCharge);
+    }
+
+    @Test
+    public void whenQuoteIsLessThan10MinutesOldProcessingFeeIs10Pounds_ExpensiveQuote(){
+        BigDecimal quotePrice = new BigDecimal(1000);
+        long quoteAgeMinutes = 10;
+
+        BigDecimal processingCharge = testableTicketingSystem.getProcessingFee(quotePrice, quoteAgeMinutes);
+
+        BigDecimal expectedCharge = new BigDecimal(10);
+
+        assertEquals(expectedCharge, processingCharge);
+    }
+
+    @Test
+    public void whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote(){
+        BigDecimal quotePrice = new BigDecimal(100);
+        long quoteAgeMinutes = 10;
+
+        BigDecimal processingCharge = testableTicketingSystem.getProcessingFee(quotePrice, quoteAgeMinutes).setScale(2, RoundingMode.HALF_UP);
+
+        BigDecimal expectedCharge = quotePrice.multiply(new BigDecimal(0.05)).setScale(2, RoundingMode.HALF_UP);
+
+        assertEquals(expectedCharge, processingCharge);
+    }
 
 
     private class TestableTicketingSystem extends OnlineTicketingSystem {
@@ -184,5 +219,14 @@ public class TicketingSystemTest {
         protected void addOfferAsQuote(Offer offer){
             super.addOfferAsQuote(offer);
         }
-    }
+
+        @Override
+        protected BigDecimal getProcessingFee(BigDecimal quotePrice, long quoteAgeMinutes){
+            return super.getProcessingFee(quotePrice, quoteAgeMinutes);
+        }
+
+        @Override
+        protected BigDecimal getLesserOf5PercentOr10Pounds(BigDecimal quotePrice){
+            return super.getLesserOf5PercentOr10Pounds(quotePrice);
+        }    }
 }

@@ -7,13 +7,10 @@ import fit.ColumnFixture;
 
 import java.util.List;
 
-/**
- * Created by Dave on 19/07/2015.
- */
-public class SearchResultCountFixture extends ColumnFixture {
-
+public class ConfirmBookingFixture extends ColumnFixture {
     private String origin;
     private String destination;
+    private String userAuthToken = "tom@example.com";
 
     public void setOrigin(String orig){
         this.origin = orig;
@@ -22,10 +19,16 @@ public class SearchResultCountFixture extends ColumnFixture {
         this.destination = dest;
     }
 
-    public int searchForTickets() {
+    public boolean confirmBooking() {
         TicketService ticketingSystem = new OnlineTicketingSystem();
         List<Offer> searchResults = ticketingSystem.searchForTickets(origin, destination);
-        return searchResults.size();
+
+        if (searchResults.size() > 0) {
+            ticketingSystem.confirmBooking(searchResults.get(0).id, userAuthToken);
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
-

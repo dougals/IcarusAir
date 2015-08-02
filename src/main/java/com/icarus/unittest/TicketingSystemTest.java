@@ -169,6 +169,26 @@ public class TicketingSystemTest {
         assertEquals(expectedCharge, processingCharge);
     }
 
+    @Test
+    public void when5PercentIsLessThan10LesserIs5Percent(){
+        BigDecimal tenPounds = new BigDecimal(10.00);
+        BigDecimal quotePrice = new BigDecimal(250.00);
+
+        BigDecimal fee = testableTicketingSystem.getLesserOf5PercentOr10Pounds(quotePrice);
+
+        assertEquals(fee, tenPounds);
+    }
+
+    @Test
+    public void when5PercentIsLessThan10LesserIs10Pounds(){
+        BigDecimal quotePrice = new BigDecimal(195.00);
+        BigDecimal fivePercent = quotePrice.multiply(new BigDecimal(0.05).setScale(2, RoundingMode.HALF_UP));
+
+        BigDecimal fee = testableTicketingSystem.getLesserOf5PercentOr10Pounds(quotePrice).setScale(2, RoundingMode.HALF_UP);
+
+        assertEquals(fee, fivePercent);
+    }
+
 
     private class TestableTicketingSystem extends OnlineTicketingSystem {
 

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ee4e88-0937-449f-96ad-9e068bbda00d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/icarus/OnlineTicketingSystem.java" afterPath="$PROJECT_DIR$/src/main/java/com/icarus/OnlineTicketingSystem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/icarus/unittest/TicketingSystemTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/icarus/unittest/TicketingSystemTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/icarus/unittest/VerifyExistingBehaviour.java" afterPath="$PROJECT_DIR$/src/main/java/com/icarus/unittest/VerifyExistingBehaviour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
     </list>
     <ignored path="IcarusAir.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +34,8 @@
           <file leaf-file-name="OnlineTicketingSystem.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/icarus/OnlineTicketingSystem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.92338175">
-                  <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.339498">
+                  <caret line="63" column="50" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="50" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -53,16 +50,16 @@
           <file leaf-file-name="TicketingSystemTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/icarus/unittest/TicketingSystemTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7978864">
-                  <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.7080581">
+                  <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#7408#7409#0" expanded="true" />
-                    <element signature="e#7469#7470#0" expanded="true" />
-                    <element signature="e#7939#7940#0" expanded="true" />
-                    <element signature="e#7988#7989#0" expanded="true" />
-                    <element signature="e#8060#8061#0" expanded="true" />
-                    <element signature="e#8112#8113#0" expanded="true" />
+                    <element signature="e#8138#8139#0" expanded="true" />
+                    <element signature="e#8199#8200#0" expanded="true" />
+                    <element signature="e#8669#8670#0" expanded="true" />
+                    <element signature="e#8718#8719#0" expanded="true" />
+                    <element signature="e#8790#8791#0" expanded="true" />
+                    <element signature="e#8842#8843#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -437,59 +434,7 @@
       <recent name="com.icarus" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote">
-    <configuration default="false" name="VerifyExistingBehaviour.testThatSearchingForAValidFlightReturnsOffers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.icarus.unittest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="IcarusAir" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.icarus.unittest" />
-      <option name="MAIN_CLASS_NAME" value="com.icarus.unittest.VerifyExistingBehaviour" />
-      <option name="METHOD_NAME" value="testThatSearchingForAValidFlightReturnsOffers" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="xxxOnlineTicketingSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.icarus.unittest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="IcarusAir" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.icarus.unittest" />
-      <option name="MAIN_CLASS_NAME" value="com.icarus.unittest.xxxOnlineTicketingSystemTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TicketingSystemTest.when5PercentIsLessThan10LesserIs10Pounds">
     <configuration default="false" name="TicketingSystemTest.whenQuoteIsLessThan2MinutesOldProcessingFeeIs0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -555,6 +500,58 @@
       <option name="PACKAGE_NAME" value="com.icarus.unittest" />
       <option name="MAIN_CLASS_NAME" value="com.icarus.unittest.TicketingSystemTest" />
       <option name="METHOD_NAME" value="whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TicketingSystemTest.when5PercentIsLessThan10LesserIs10Pounds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.icarus.unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="IcarusAir" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.icarus.unittest" />
+      <option name="MAIN_CLASS_NAME" value="com.icarus.unittest.TicketingSystemTest" />
+      <option name="METHOD_NAME" value="when5PercentIsLessThan10LesserIs10Pounds" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TicketingSystemTest.when5PercentIsLessThan10LesserIs5Percent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.icarus.unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="IcarusAir" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.icarus.unittest" />
+      <option name="MAIN_CLASS_NAME" value="com.icarus.unittest.TicketingSystemTest" />
+      <option name="METHOD_NAME" value="when5PercentIsLessThan10LesserIs5Percent" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -739,19 +736,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VerifyExistingBehaviour.testThatSearchingForAValidFlightReturnsOffers" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.xxxOnlineTicketingSystemTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan2MinutesOldProcessingFeeIs0" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs10Pounds_ExpensiveQuote" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan2MinutesOldProcessingFeeIs0" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs10Pounds_ExpensiveQuote" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.when5PercentIsLessThan10LesserIs10Pounds" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.when5PercentIsLessThan10LesserIs5Percent" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs10Pounds_ExpensiveQuote" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan2MinutesOldProcessingFeeIs0" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.xxxOnlineTicketingSystemTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VerifyExistingBehaviour.testThatSearchingForAValidFlightReturnsOffers" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.when5PercentIsLessThan10LesserIs10Pounds" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.when5PercentIsLessThan10LesserIs5Percent" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs5Pct_CheapQuote" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan10MinutesOldProcessingFeeIs10Pounds_ExpensiveQuote" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TicketingSystemTest.whenQuoteIsLessThan2MinutesOldProcessingFeeIs0" />
       </list>
     </recent_temporary>
   </component>
@@ -777,7 +774,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -787,7 +784,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23584905" sideWeight="0.4945122" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26429242" sideWeight="0.47987804" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26429242" sideWeight="0.47987804" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.49756098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -858,12 +855,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7408#7409#0" expanded="true" />
-            <element signature="e#7469#7470#0" expanded="true" />
-            <element signature="e#7939#7940#0" expanded="true" />
-            <element signature="e#7988#7989#0" expanded="true" />
-            <element signature="e#8060#8061#0" expanded="true" />
-            <element signature="e#8112#8113#0" expanded="true" />
+            <element signature="e#8138#8139#0" expanded="true" />
+            <element signature="e#8199#8200#0" expanded="true" />
+            <element signature="e#8669#8670#0" expanded="true" />
+            <element signature="e#8718#8719#0" expanded="true" />
+            <element signature="e#8790#8791#0" expanded="true" />
+            <element signature="e#8842#8843#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -925,7 +922,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -961,7 +958,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -989,7 +986,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1212,7 +1209,7 @@
         <state vertical-scroll-proportion="0.26948482">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1222,15 +1219,15 @@
         <state vertical-scroll-proportion="0.14663143">
           <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icarus/OnlineTicketingSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92338175">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.339498">
+          <caret line="63" column="50" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1239,16 +1236,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icarus/unittest/TicketingSystemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7978864">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7080581">
+          <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7408#7409#0" expanded="true" />
-            <element signature="e#7469#7470#0" expanded="true" />
-            <element signature="e#7939#7940#0" expanded="true" />
-            <element signature="e#7988#7989#0" expanded="true" />
-            <element signature="e#8060#8061#0" expanded="true" />
-            <element signature="e#8112#8113#0" expanded="true" />
+            <element signature="e#8138#8139#0" expanded="true" />
+            <element signature="e#8199#8200#0" expanded="true" />
+            <element signature="e#8669#8670#0" expanded="true" />
+            <element signature="e#8718#8719#0" expanded="true" />
+            <element signature="e#8790#8791#0" expanded="true" />
+            <element signature="e#8842#8843#0" expanded="true" />
           </folding>
         </state>
       </provider>
